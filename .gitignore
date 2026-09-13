@@ -1,0 +1,37 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.crt
+*.p12
+*.pfx
+
+# WordPress / PHP local artifacts
+wp-config.php
+*.log
+vendor/
+
+# Node artifacts if examples are added later
+node_modules/
+.next/
+dist/
+build/
+
+# Database / dumps
+*.sql
+*.sqlite
+*.db
+
+# Temporary / backup files
+*.bak
+*.tmp
+*.swp
+*~
