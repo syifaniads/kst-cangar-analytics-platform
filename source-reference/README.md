@@ -4,7 +4,7 @@ The canonical collaborative implementation remains in:
 
 https://github.com/gilanghfizh/kstcangar-wp
 
-This portfolio repository intentionally does not copy the complete WordPress installation. Instead, it points directly to the original source locations that are most relevant to the frontend/dashboard/integration work discussed here.
+This portfolio repository keeps direct links to the original team history while also including a **curated, sanitized subset** of frontend/theme integration code under [`../src/`](../src/).
 
 ## Dashboard theme
 
@@ -21,7 +21,8 @@ This portfolio repository intentionally does not copy the complete WordPress ins
 - [dashboard.js](https://github.com/gilanghfizh/kstcangar-wp/blob/main/wordpress/wp-content/themes/kstcangar-dashboard/assets/js/dashboard.js)
 - [stok.js](https://github.com/gilanghfizh/kstcangar-wp/blob/main/wordpress/wp-content/themes/kstcangar-dashboard/assets/js/stok.js)
 - [booking.js](https://github.com/gilanghfizh/kstcangar-wp/blob/main/wordpress/wp-content/themes/kstcangar-dashboard/assets/js/booking.js)
-- [login-helper.js](https://github.com/gilanghfizh/kstcangar-wp/blob/main/wordpress/wp-content/themes/kstcangar-dashboard/assets/js/login-helper.js)
+
+The original authentication helper is intentionally **not directly reproduced in this portfolio** because it contained environment-specific hard-coded credentials in client-side code. This repository uses a sanitized [`login-helper.example.js`](../src/theme/assets/js/login-helper.example.js) instead.
 
 ## Backend / API context
 
@@ -37,6 +38,6 @@ The backend/API was primarily another team member's responsibility, but it is us
 - [fix: admin panel](https://github.com/gilanghfizh/kstcangar-wp/commit/82cff1751e27339788bf57e4cc8f9d528d77abed)
 - [connect dashboard, stock opname and booklist to backend](https://github.com/gilanghfizh/kstcangar-wp/commit/4e1bf72e4d4450e81d79d5d709aebfecc083bc89)
 
-## Why links instead of a full copy?
+## Why not copy the entire repository?
 
-The original repository includes WordPress core files and shared team work. Keeping direct links preserves the canonical team history and attribution while this repository remains easy for a portfolio reviewer to navigate.
+The original repository includes WordPress core files, default plugins/themes, uploads, and team-wide implementation. Copying all of it would obscure individual contribution and duplicate unrelated code. The portfolio repository therefore keeps only the parts useful for technical review and preserves canonical attribution through the original links and commit history.
